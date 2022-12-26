@@ -25,6 +25,7 @@ export default {
         this.final=this.listimg.slice(-9);
         this.final.reverse()
         this.listimg.splice(0,0,a);
+        console.log("array length is: "+this.listimg.length)
       }
   },
    async mounted(){        
