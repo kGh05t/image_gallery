@@ -24,8 +24,15 @@
               gradient="to bottom, rgba(0,0,142,.1), rgba(0,0,0,.5)"
               height="200px"
               cover
-            >
-              <v-card-title class="text-white" v-text="card.author"></v-card-title>
+            ><template v-slot:placeholder>
+        <div class="d-flex align-center justify-center fill-height">
+          <v-progress-circular
+            indeterminate
+            color="grey-lighten-4"
+          ></v-progress-circular>
+        </div>
+      </template>
+            <v-card-title class="text-white" v-text="card.author"></v-card-title>
             </v-img></Transition>
 
             <v-card-actions>
