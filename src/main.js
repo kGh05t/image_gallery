@@ -6,7 +6,7 @@ import {aliases,fa} from 'vuetify/iconsets/fa'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
-
+import Particles from "vue3-particles";
 
 const vuetify = createVuetify({
   components,
@@ -20,4 +20,4 @@ const vuetify = createVuetify({
   }
 })
 
-createApp(App).use(vuetify).mount('#app')
+createApp(App).use(vuetify).use(Particles).mount('#app')

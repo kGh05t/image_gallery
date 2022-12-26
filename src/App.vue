@@ -1,4 +1,5 @@
 <template> 
+<particlesViewVue/>
   <gridCompVue :cards=final />
 </template>
 
@@ -20,20 +21,21 @@ export default {
   },
   methods:{
       arrayslice(){       
-        this.listimg.pop()  
+        let a=this.listimg.pop()  
         this.final=this.listimg.slice(-9);
         this.final.reverse()
+        this.listimg.splice(0,0,a);
       }
   },
    async mounted(){        
-    var p=await JSON.parse(JSON.stringify(await axios.get('https://picsum.photos/v2/list?limit=96'))); 
+    let p=await JSON.parse(JSON.stringify(await axios.get('https://picsum.photos/v2/list?limit=90'))); 
     this.listimg= p.data
     this.final=this.listimg.slice(-9)
     this.final.reverse()
     console.log(this.listimg)
     setInterval(() => {
       this.arrayslice();      
-    }, 4000);
+    }, 3000);
   },
   setup() {
     console.log("this is setup")

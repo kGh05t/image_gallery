@@ -3,6 +3,7 @@
    <v-btn variant="tonal" @click="action">
   Button
 </v-btn>
+<div class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
 
     <v-card
     class="mx-auto"
@@ -20,7 +21,7 @@
             <v-img
               :src="card.download_url"
               class="align-end"
-              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              gradient="to bottom, rgba(0,0,142,.1), rgba(0,0,0,.5)"
               height="200px"
               cover
             >

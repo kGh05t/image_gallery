@@ -11,7 +11,9 @@
     "axios": "^1.2.1",
     "core-js": "^3.8.3",
     "material-design-icons-iconfont": "^6.7.0",
+    "tsparticles": "^2.7.1",
     "vue": "^3.2.13",
+    "vue3-particles": "^2.7.1",
     "vuetify": "^3.0.6",
     "vuex": "^4.0.2"
   },
